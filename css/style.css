@@ -178,6 +178,15 @@ footer img{
     
   }
 
+  .sobre a{
+    font-size: 9px !important;
+  
+  }
+  
+
+
+  
+
 }
 
 @media  screen and (max-width: 770px) {
@@ -279,8 +288,9 @@ footer img{
 
   .sobre a{
     flex: 0 0 auto !important; 
-    max-width: 25.90%; 
+    max-width: 20.90%; 
     justify-content: center !important; 
+    font-size: 12px;
   
   }
   }
@@ -310,11 +320,6 @@ footer img{
 
 }
 
-@media  screen and (max-width: 1400px) {
-  
-  .card,.card-img-top{
-  }
-}
 
 
 
