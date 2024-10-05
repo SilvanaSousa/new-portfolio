@@ -1,326 +1,347 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
 }
-
 
 body {
-  background: linear-gradient(to bottom, #080867, #d1caca);
-    
+  background-color: #f2f2ee !important;
 }
 
-.header a{
-  color: rgb(252, 254, 255) !important;
-  font-size: 20px;
+
+
+.header a {
+  color: #75344a !important;
+  font-size: 18px;
   margin-left: 30px;
-  
-  
- 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.header button{
-  background-color: #ffffff;
-
-}
-.header button > span{
-  color: white!important;
+.header {
+  background: transparent !important;
 }
 
-.navbar-nav{
-  background-color: #170a4e;
-  border-radius: 10px;
-}
-
+/* Menu */
 .navbar-nav a:hover {
-  color: #fff; 
-  background-color: #5a429f; 
+  color: #ffffff !important;
+  background-color: #75344a;
   border-radius: 5px;
 }
-.home h1{
+
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  
+
+}
+
+
+.home-titulo h1 , .home-titulo h2{
+  color: #8e4960!important;
+  font-family: 'Times New Roman', Times, serif;
+   
+}
+
+.home-titulo h1{
   font-size: 70px;
-
+  
 }
 
-.home,.funcao{
+.home-titulo h2{
+  font-family: 'Times New Roman', Times, serif;
   font-weight: 100;
-}
-
-.introduction{
-    height: 50vh;
-    color: aliceblue;
-    top: 100px;
-    position: relative;    
+  letter-spacing: 5px !important;
 }
 
 
-section h2 {
-  color: aliceblue;
-  font-size: 30px;
-}
 
-section p {
-  color: aliceblue;
-  font-size: 20px;
-}
 
-.ability h1{
-  margin-top: 100px !important;
-  margin-bottom: 100px !important;
-  color: rgb(255, 255, 255) !important;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 40px !important;
-  box-shadow: 0px 5px 10px 5px rgb(132, 128, 215);
-  padding: 5px;
-  width: 300px;
-  text-align: center;
+/* Seção Sobre Mim */
+.sobre h2, #projetos h2, #experiencia h2, #habilidades h2{
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  color: #8e4960;
+  margin-bottom: 20px;
+  padding: 100px;
   
 }
 
-
-
-.projects h1{
-  margin-top: 150px !important;
-  margin-bottom: 100px !important;
-  color: rgb(255, 255, 255) !important;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 40px !important;
-  box-shadow: 0px 5px 10px 5px rgb(132, 128, 215);
-  padding: 5px;
-  width: 300px;
-  
-} 
-
-
-.image-tecnologias {
-  animation: rotate 5s infinite linear;
-  transition: opacity 0.3s ease-in-out;
-  box-shadow: 0px 5px 10px 5px rgb(228, 228, 235);
- padding: 5px;
-}
-
-.image-tecnologias:hover {
-  opacity: 0.7;
-}
-
-footer{
-  background-color: #18142e!important;
-}
-  #about-text::after {
-    content: "";
-    display: inline-block;
-    animation: blink 1s infinite;
-  }
-  
-  @keyframes blink {
-    0%, 100% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-  }
-
-  .btn-change{
-    width: 30px!important;
-    height: 30px!important;
-    border-radius: 50%!important;
-    background-color: rgb(57, 69, 116)!important;
-  }
-
-  .btn-change:hover{
-    transition: .5s;
-    scale: 1.1;
-    background-color: #a19fa9!important;
-  }
-  #texto-sobre{
-    font-size: 15px;
-    width: 630px;
-    height: 300px;
-    text-align: justify;
-  }
-
-.icones2 .row {
-  justify-content: center !important; 
-  
-}
-.col-md-1 {
-  flex: 0 0 auto !important; 
-  max-width: 25.0% !important; 
-  margin-left: 20px;
-  
-}
-
-.fundo{
-  background-image: radial-gradient(circle at 53.41% 50.6%, #3b2c66 0, #17143d 50%, #000019 100%);
-  padding-top: 20px;
-}
-
-
-footer img{
-  margin-left: 30px;
-}
-
-
-@media  screen and (max-width: 500px) {
-  
-  footer p{
-    text-align: center;
-    
-  }
-
-
-  footer img{
-    width: 30px !important;
-    margin-right: 15px;
-  
-    
-  }
-
-  .sobre a{
-    font-size: 9px !important;
-  
-  }
-  
-
-
-  
-
-}
-
-@media  screen and (max-width: 770px) {
-  
-
-  .ability ,.ability-titulo,h1{
-    margin: 0 auto;
-    
-  }
-  .projects h1{
-    margin: 0 auto;
-  }
-  
-  .card{
-    width: 300px;
-    margin: 0 auto;
-  }
-
-
-  .icones2 .row {
-    justify-content: center !important; /* Centraliza os elementos na linha */
-  }
-  .col-md-1 {
-    flex: 0 0 auto !important; /* Permite que as colunas tenham tamanho automático */
-    max-width: 25.0% !important; /* Defina uma largura máxima para as colunas para garantir que elas não sejam maiores que 1/7 da largura da tela */
-    margin-top: 10% !important;
-    margin-left: 20px;
-    
-  }
-}
+.sobre p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #666;
+  letter-spacing: 1px;
+  line-height: 30px ;
+  padding:25px 0px; 
  
-@media  screen and (max-width: 890px) {
+}
+
+.sobre a{
+  color: #8e4960;
+ 
+}
+
+
+
+
+/* #projetos h2{
+  font-family: 'Times New Roman', Times, serif;
+  color: #75344a;
+  padding: 100px;
+  height: 30vh;
+  font-size: 50px;
+
+} */
+
+#projetos .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para o card */
+  border: none; /* Remover borda padrão do card */
+}
+
+#projetos .card img {
+  height: 200px; /* Define uma altura fixa para as imagens dos projetos */
+  object-fit: cover; /* Mantém o aspecto da imagem dentro do card */
+}
+
+/* #projetos h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
   
+} */
 
-  .home,.nome{
-    font-size: 40px !important;
+#projetos .btn {
+  background-color:#75344a; /* Cor do botão */
+  border: none;
+}
+
+.card h5{
+  color: #75344a !important;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card p{
+  color:#8e4960;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card {
+  width: 70% !important; /* Definindo a largura do card */
+  margin: 0 auto !important; /* Centraliza o card horizontalmente */
+  
+}
+
+.card-img-top {
+  width: 100% !important; /* Faz a imagem ocupar 100% da largura do contêiner */
+  height: auto !important; /* Mantém a proporção da imagem */
+  object-fit: cover !important; /* Ajusta a imagem sem distorcer */
+}
+
+
+
+
+/* #experiencia h2 {
+  font-weight: bold;
+  color: #75344a;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  height: 25vh;
+  padding: 60px;
+} */
+
+#experiencia h3 {
+  font-weight: bold;
+  color: #75344a;
+}
+
+#experiencia .resumo h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #75344a;
+}
+
+#experiencia .resumo p {
+  margin-bottom: 10px;
+  color: #8e4960;
+ 
+}
+
+
+
+
+/* #habilidades h2 {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #75344a !important;
+  height: 20vh;
+  padding-top: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+
+} */
+
+
+
+
+footer {
+  background-color: #8e4960 !important;  /* Cor de fundo preta */
+}
+
+footer a {
+  color: #fff; /* Cor do texto dos links brancos */
+  transition: color 0.3s; /* Efeito de transição na cor do texto */
+}
+
+footer a:hover {
+  color: #ddd; /* Cor do texto ao passar o mouse */
+}
+
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px; /* Distância do fundo */
+  right: 20px; /* Distância da direita */
+  background-color: #4f2828; /* Cor do botão do WhatsApp */
+  color: white; /* Cor do ícone */
+  border-radius: 50%; /* Botão arredondado */
+  width: 60px; /* Largura do botão */
+  height: 60px; /* Altura do botão */
+  display: flex;
+  align-items: center; /* Centraliza o ícone verticalmente */
+  justify-content: center; /* Centraliza o ícone horizontalmente */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra para dar efeito de flutuação */
+  font-size: 24px; /* Tamanho do ícone */
+  z-index: 1000; /* Mantém o botão no topo */
+  transition: background-color 0.3s; /* Transição para o hover */
+}
+
+.whatsapp-button:hover {
+  background-color: #0b9925; /* Cor do botão ao passar o mouse */
+}
+
+.whatsapp-button i {
+  margin: 0; /* Remove margens do ícone */
+}
+
+
+
+
+@media (max-width: 450px) {
+
+  .home-titulo h1{
+    font-size: 25px !important;
+    margin-left: 15% !important;
+    
+    
   }
-
-  .home,.funcao{
-    font-size: 45px !important;
+  .home-titulo h2{
+    text-align: center !important;
+    font-size: 14px !important;
+    margin-left: 15% !important;
+    letter-spacing: 0px !important;
+    
    
   }
 
-  .col-md-1 {
-    margin-left: 30px;
-
+  #home img{
+    margin: 0 auto !important;
+    padding-right: 20% !important;
+    
   }
+
+  .sobre h2, #projetos h2, #experiencia h2, #habilidades h2{
+    font-size: 30px !important;
+  }
+
+  
+.whatsapp-button {
+  width: 45px; 
+  height: 45px; 
+}
+
 
 }
 
-@media  screen and (max-width: 992px) {
-  
-  section h2 {
-    font-size: 25px !important;
-  
+@media (max-width: 550px) {
+
+  .home-titulo h1{
+    margin-left: 10%;
+    
+    
   }
-  
-  section p {
+  .home-titulo h2{
+    margin-left: 10%;
     font-size: 15px !important;
     
    
   }
 
-  .img-fluid{
-    margin-top: 25% !important;
-    
-  }
+  
+.whatsapp-button {
+  width: 45px; 
+  height: 45px; 
+}
 
-  .sobre a{
+
+
+}
+
+
+@media (max-width: 710px) {
+
+ #sobre .icones-sobre a svg {
+  
+  margin-left: -53% !important;
+ }
+
+
+}
+
+
+
+
+
+
+@media (max-width: 1341px) {
+
+  .home-titulo h1{
     text-align: center;
-  }
-
-  .col-md-1 {
-    margin-left: 40px;
+    font-size: 40px;
+    
     
   }
+  .home-titulo h2{
+    text-align: center;
+    font-size: 20px;
+    
+   
+  }
+
+  #home img{
+    width: 400px !important;
+    margin-left: 50px !important;
+  }
+
+  .sobre h2 {
+    font-size: 40px;
+    
+  }
+  
+  .sobre p {
+    font-size: 20px;
+    padding: 5%;
+  }
+
+
+  #experiencia h2 {
+    font-size: 35px;
+  }
+  
+ 
  
 }
-
-@media  screen and (max-width: 1000px) {
-  
-  section h2 {
-    font-size: 70px;
-    text-align: center;
-    
-   
-  }
-  
-  section p {
-    font-size: 17px;
-    text-align: center;
-   
-  }
-
-  .img-fluid{
-    margin-top: 25%;
-    
-  }
-
-  .sobre a{
-    flex: 0 0 auto !important; 
-    max-width: 20.90%; 
-    justify-content: center !important; 
-    font-size: 12px;
-  
-  }
-  }
-
-@media  screen and (max-width: 1200px) {
-  
-  section h2 {
-    font-size: 30px;
-    text-align: center;
-   
-  }
-  
-  section p {
-    font-size: 20px;
-    text-align: center;
-   
-  }
-
-  .img-fluid{
-    margin-top: 14%;
-    
-  }
-
-  .sobre a{
-    margin-left: 90px;
-  }
-
-}
-
-
-
 
 
